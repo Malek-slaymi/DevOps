@@ -1,0 +1,57 @@
+Microsoft Windows [version 10.0.26100.6725]
+(c) Microsoft Corporation. Tous droits réservés.
+
+C:\Users\slaym>git config --global user.name "Malek Slaymi"
+
+C:\Users\slaym>git config --global utilisateur.email "slaymimalek@gmail.com"
+
+C:\Users\slaym>cd "C:\Users\slaym\Desktop\dev ops"
+
+C:\Users\slaym\Desktop\dev ops>git init
+Reinitialized existing Git repository in C:/Users/slaym/Desktop/dev ops/.git/
+
+
+C:\Users\slaym\Desktop\dev ops>echo Bonjour GitHub > test.txt
+
+C:\Users\slaym\Desktop\dev ops>git add .
+
+C:\Users\slaym\Desktop\dev ops>git commit -m "Ajout des fichiers du projet"
+[master (root-commit) 0ceae7a] Ajout des fichiers du projet
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+C:\Users\slaym\Desktop\dev ops>git remote add origin https://github.com/Malek-slaymi/DevOps.git
+error: remote origin already exists.
+
+C:\Users\slaym\Desktop\dev ops>git remote -v
+origin  https://github.com/Malek-slaymi/DevOps.git (fetch)
+origin  https://github.com/Malek-slaymi/DevOps.git (push)
+
+C:\Users\slaym\Desktop\dev ops>git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 245 bytes | 81.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Malek-slaymi/DevOps/pull/new/master
+remote:
+To https://github.com/Malek-slaymi/DevOps.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\slaym\Desktop\dev ops>git clone https://github.com/Malek-slaymi/DevOps.git
+Cloning into 'DevOps'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (6/6), done.
+
+C:\Users\slaym\Desktop\dev ops>git pull origin master
+From https://github.com/Malek-slaymi/DevOps
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+C:\Users\slaym\Desktop\dev ops>
